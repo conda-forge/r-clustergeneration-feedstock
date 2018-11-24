@@ -14,7 +14,8 @@ source:
   sha256: 7c591ad95a8a9d7fb0e4d5d80dfd78f7d6a63cf7d11eb53dd3c98fdfb5b868aa
 
 build:
-  number: 1
+  noarch: generic
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,8 +45,7 @@ about:
     as degree of separation, number of clusters, number of variables, number of noisy
     variables.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win] 
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
