@@ -5,7 +5,7 @@ Home: https://CRAN.R-project.org/package=clusterGeneration
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: We developed the clusterGeneration package to provide functions  for generating random clusters, generating random  covariance/correlation matrices, calculating a separation index (data and population version) for pairs of clusters or cluster distributions, and 1-D and 2-D projection plots to visualize clusters.  The package also contains a function to generate random clusters based on factorial designs with factors such as degree of separation, number of clusters, number of variables, number of noisy variables.
 
