@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: clusterGeneration_{{ version }}.tar.gz
   url:
     - https://cran.r-project.org/src/contrib/clusterGeneration_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/clusterGeneration/clusterGeneration_{{ version }}.tar.gz
@@ -24,7 +23,6 @@ requirements:
   build:
     - r-base
     - r-mass
-
   run:
     - r-base
     - r-mass
@@ -36,17 +34,13 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=clusterGeneration
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: We developed the clusterGeneration package to provide functions  for generating random clusters, generating random  covariance/correlation matrices, calculating a separation index (data and population version) for pairs of clusters or cluster distributions, and 1-D and 2-D projection plots to visualize clusters.  The
     package also contains a function to generate random clusters based on factorial designs with factors such as degree of separation, number of clusters, number of variables, number of noisy variables.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - dpryan79
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
