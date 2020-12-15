@@ -1,4 +1,4 @@
-{% set version = "1.3.6" %}
+{% set version = "1.3.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/clusterGeneration_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/clusterGeneration/clusterGeneration_{{ version }}.tar.gz
-  sha256: c7650c5cd38c7ef3caec6c9e386029398525d87436535aa23dcf2c5469ad5c5d
+  sha256: 534f29d8f7ed11e6e9a496f15845b588ec7133f3da5e6def8140b88500e52d5c
 
 build:
   noarch: generic
